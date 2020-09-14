@@ -1,6 +1,7 @@
 import React from 'react';
 import "./App.sass"
 import {Navbar} from "./components/Navbar";
+import {Home} from "./pages/Home";
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
         <>
             <div className="main">
                 <Navbar/>
+                <Home/>
             </div>
         </>
     );
