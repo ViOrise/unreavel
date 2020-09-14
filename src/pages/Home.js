@@ -1,9 +1,17 @@
 import React from "react"
+import {Image} from "../components/Image";
+import {Input} from "../components/Input";
 
 export const Home = () =>{
+    const arr = new Array(15).fill("").map((_,i)=>i)
     return(
         <>
-            <h1>Home page</h1>
+            <Input/>
+            <div className="cards">
+                {arr.map((num)=>{
+                    return <Image key={num}/>
+                })}
+            </div>
         </>
     )
 }
